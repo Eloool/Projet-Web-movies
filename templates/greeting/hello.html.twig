@@ -1,0 +1,12 @@
+<p>Hello world</p>
+<form action="{{ path('app_create_user') }}" method="post">
+    <input type="text" name="name" placeholder="Your name">
+    <input type="email" name="email" placeholder="Your email">
+    <input type="password" name="password" placeholder="Your password">
+    <button type="submit">Create your account</button>
+</form>
+
+<form action="{{ path('app_login') }}" method="post">
+    <input type="email" name="email" placeholder="Your email">
+    <input type="password" name="password" placeholder="Your password">
+    <button type="submit">Login</button>
